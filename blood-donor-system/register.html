@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blood Donor Registration</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <h1>Blood Donor Registration</h1>
+
+  <div class="card">
+    <form id="registerForm">
+
+      <label>Student Name</label>
+      <input type="text" id="name" placeholder="Enter full name" required>
+
+      <label>Roll Number</label>
+      <input type="text" id="roll_no" placeholder="Enter roll number" required>
+
+      <label>Department</label>
+      <select id="department" required>
+        <option value="">Select Department</option>
+        <option>BCA</option>
+        <option>BSc</option>
+        <option>BA</option>
+        <option>BCom</option>
+      </select>
+
+      <label>Year</label>
+      <select id="year" required>
+        <option value="">Select Year</option>
+        <option>1st Year</option>
+        <option>2nd Year</option>
+        <option>3rd Year</option>
+      </select>
+
+      <label>Blood Group</label>
+      <select id="blood_group" required>
+        <option value="">Select Blood Group</option>
+        <option>A+</option>
+        <option>A-</option>
+        <option>B+</option>
+        <option>B-</option>
+        <option>AB+</option>
+        <option>AB-</option>
+        <option>O+</option>
+        <option>O-</option>
+      </select>
+
+      <label>Phone Number</label>
+      <input type="tel" id="phone" placeholder="Enter phone number" required>
+
+      <div class="checkbox-row">
+        <input type="checkbox" id="available" checked>
+        <label for="available">Available to Donate</label>
+      </div>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+  <!-- JS -->
+  <script src="js/register.js"></script>
+</body>
+</html>
